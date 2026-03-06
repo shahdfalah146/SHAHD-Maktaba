@@ -51,15 +51,38 @@ fun BookListScreen(
                         modifier = Modifier.align(Alignment.Center)
                     )
                 } else {
-                    BookList(
-                        books = books,
-                        modifier = Modifier.fillMaxSize()
-                    )
+                    Column(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(16.dp)
+                    ) {
+
+                        Text(
+                            text = "Total Books: ${books.size}",
+                            style = MaterialTheme.typography.titleMedium,
+                            fontWeight = FontWeight.Bold
+                        )
+
+                        Spacer(modifier = Modifier.height(4.dp))
+
+                        Text(
+                            text = "Total Pages: ${books.sumOf { it.nbPages }}",
+                            style = MaterialTheme.typography.bodyMedium
+                        )
+
+                        Spacer(modifier = Modifier.height(16.dp))
+
+                        BookList(
+                            books = books,
+                            modifier = Modifier.fillMaxSize()
+                        )
+                    }
+                }
                 }
             }
         }
     }
-}
+
 
 /**
  * Composable for displaying a list of books
