@@ -47,8 +47,36 @@ class BookRepository {
             isbn = "978-0-596-00770-1",
             title = "Head First Design Patterns",
             nbPages = 694
+        ),
+        Book(
+            isbn = "978-0-262-03384-8",
+            title = "Introduction to Algorithms",
+            nbPages = 1312
+        ),
+        Book(
+            isbn = "978-1-59327-584-6",
+            title = "Automate the Boring Stuff with Python",
+            nbPages = 504
+        ),
+        Book(
+            isbn = "978-1-491-95403-7",
+            title = "Kotlin in Action",
+            nbPages = 360
+        ),
+        Book(
+            isbn = "978-0-134-34557-8",
+            title = "Android Programming: The Big Nerd Ranch Guide",
+            nbPages = 752
+        ),
+        Book(
+            isbn = "978-0-321-63537-8",
+            title = "Database System Concepts",
+            nbPages = 1376
         )
     )
+
+
+
 
     /**
      * TODO for Students (TP1 - Exercise 2):
